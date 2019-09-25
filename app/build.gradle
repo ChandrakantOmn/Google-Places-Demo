@@ -1,9 +1,12 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "wavetechstudio.placessdksample"
+        applicationId "com.omniwyse.placessdksample"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1

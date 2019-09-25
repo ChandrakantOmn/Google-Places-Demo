@@ -100,6 +100,8 @@ class AutoCompleteAdapter internal constructor(context: Context, private val pla
         val bounds = RectangularBounds.newInstance(
                 LatLng(-33.880490, 151.184363),
                 LatLng(-33.858754, 151.229596))
+
+
         val requestBuilder = FindAutocompletePredictionsRequest.builder()
                 .setQuery(constraint.toString())
                 .setCountry("") //Use only in specific country
@@ -110,6 +112,8 @@ class AutoCompleteAdapter internal constructor(context: Context, private val pla
                 .setTypeFilter(TypeFilter.ADDRESS)
 
         val results = placesClient.findAutocompletePredictions(requestBuilder.build())
+
+
         //Wait to get results.
         try {
             Tasks.await(results, 60, TimeUnit.SECONDS)
@@ -120,6 +124,7 @@ class AutoCompleteAdapter internal constructor(context: Context, private val pla
         } catch (e: TimeoutException) {
             e.printStackTrace()
         }
+
         return if (results.isSuccessful) {
             if (results.result != null) {
                 results.result!!.autocompletePredictions as ArrayList<AutocompletePrediction>

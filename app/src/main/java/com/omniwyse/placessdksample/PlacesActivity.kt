@@ -13,7 +13,7 @@ import com.google.android.libraries.places.api.net.PlacesClient
 
 class PlacesActivity : AppCompatActivity() {
     private lateinit var autoCompleteTextView: AutoCompleteTextView
-    private lateinit var adapter: AutoCompleteAdapter
+    private lateinit var adapter: AutoAdapter
     private lateinit var responseView: TextView
     private lateinit var placesClient: PlacesClient
 
@@ -68,7 +68,7 @@ class PlacesActivity : AppCompatActivity() {
         autoCompleteTextView = findViewById(R.id.auto)
         autoCompleteTextView.threshold = 1
         autoCompleteTextView.onItemClickListener = autocompleteClickListener
-        adapter = AutoCompleteAdapter(this, placesClient)
+        adapter = AutoAdapter(this, placesClient)
         autoCompleteTextView.setAdapter(adapter)
     }
 }

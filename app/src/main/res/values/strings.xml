@@ -3,9 +3,6 @@
     <string name="enter_location">Enter Location</string>
     <string name="auto_complete_text">Autocomplete textview with custom adapter.</string>
     <string name="error">Google Api key is missing.</string>
-<!--    <string name="api_key">AIzaSyCqm8bWWDQPdVJ3ojQNBknKyzbTx7OScyw</string>-->
-<!--    <string name="api_key">AIzaSyC22gu6sVXqsQ6RFcmo9G3SNHsVEcwrbwU</string>-->
-<!--    <string name="api_key">AIzaSyAX8tKUrmv-4wntC5HkZTik8HSgp1MZoQk</string>-->
     <string name="api_key">AIzaSyB0oVKEc8zGo2ZM-x2TvQdBoo2UG85LrDI</string>
 
 </resources>

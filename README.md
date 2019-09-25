@@ -19,8 +19,10 @@ Add a dependency for the new SDK client library to your app-level build.gradle:
 <img src="./images/2.png" width=“400”/>
 <img src="./images/3.png" width=“400”/>
 
+# Creadit 
 ## Creadit 
-[google]: <https://developers.google.com/places/android-sdk/intro>
+### Creadit 
+
 
 
 [google]: <https://developers.google.com/places/android-sdk/intro>
